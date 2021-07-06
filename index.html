@@ -5,20 +5,26 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Free Online Video Player</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
-	<main>
-		<input type="text" id="input-url" placeholder="enter video url ...">
-		<input type="submit">
-		<video id="video-player" width="700px" height="400px" controls>
 
-			<!-- <track src="https://mahditorkaman.com/subtitle.vtt" kind="subtitles" srclang="en" label="English"> -->
-		</video>
+	<header>
+		<h1>Free Online Video Player</h1>
+	</header>
+
+	<main>
+		<input type="text" id="input-url" placeholder="enter video url ..." value="https://hexdl.upera.tv/2645748-0-480.mp4?ref=7Qc">
+		<input type="submit" value="Play Now!">
+		<input type="submit" id="remove" value="Remove Copyright">
+		<video id="player" playsinline controls></video>
 	</main>
 
-	<script src="app.js"></script>
+	<link rel="stylesheet" href="css/plyr.css">
+	<script src="js/plyr.js"></script>
+	<script src="js/app.js"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
 
 </body>
 </html>
